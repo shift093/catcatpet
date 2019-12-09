@@ -9,4 +9,5 @@ def scheduled_job():
     url = "https://catcattest.herokuapp.com/"
     connect = urllib.request.urlopen(url)
 sched.add_job(scheduled_job,'cron', day_of_week='mon-sun', minute='*/1')
+#sched.add_job(scheduled_job,'cron',hour='9-10,13-16,18-20',minute=58)
 sched.start()  # 啟動排程
