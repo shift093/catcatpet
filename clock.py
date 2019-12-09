@@ -12,7 +12,7 @@ def scheduled_job():
     connect = urllib.request.urlopen(url)
 """
 def lineNotifyMessage():
-    message = '[LINE Notify] Hello World 記得抓貓唷' # 要傳送的訊息內容
+    message = '[LINE Notify]Hello！各位～記得抓貓唷！' # 要傳送的訊息內容
     token = 'nHiUiakxNdMzf9Kt05A1oWJTas9oZQ5Oa2gYF5bx5AK' # 權杖值
     headers = {
         "Authorization": "Bearer " + token, 
