@@ -35,11 +35,12 @@ if __name__ == '__main__':
     
     #sched.add_job(lineNotifyMessage,'cron',hour='1-23',minute=5)#測試
     #sched.add_job(lineNotifyMessage,'cron',hour='1-23',minute=6)#測試
-    # 10 11 14 15 16 17 19 20 21
+    # 9 10 13 14 15 16 18 19 20
+    # 1  2  5  6  7  8 10 11 12
     # 11 12 13 14 15 17 18 19 20 21 22
-    #  2  3  4  5  6  8  9 10 11 12 13  
-    sched.add_job(lineNotifyMessage,'cron',hour='2-6,8-13',minute=28)
-    sched.add_job(lineNotifyMessage,'cron',hour='2-6,8-13',minute=29)
+    #  3  4  5  6  7  9 10 11 12 13 14 
+    sched.add_job(lineNotifyMessage,'cron',hour='3-7,9-14',minute=28)
+    sched.add_job(lineNotifyMessage,'cron',hour='3-7,9-14',minute=29)
      
     #sched.add_job(lineNotifyMessage,'cron',hour='1-2,5-8,10-12',minute=58)
     #sched.add_job(lineNotifyMessage,'cron',hour='1-2,5-8,10-12',minute=59)
