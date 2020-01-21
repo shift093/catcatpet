@@ -15,8 +15,8 @@ def lineNotifyMessage():
     message = '[測試階段]Hello！～記得抓英雄唷！'
     #message = '[測試階段]Hello！各位～記得抓貓唷！'
     #message = '[LINE Notify]Hello！各位～記得抓貓唷！' # 要傳送的訊息內容
-    token = 'nHiUiakxNdMzf9Kt05A1oWJTas9oZQ5Oa2gYF5bx5AK' # 個人權杖值
-    #token = 'TZuyoNARaeVyfDvqw7S2lnAMyCXnr0exB0wsxPhYx5M'  #群組權杖值
+    #token = 'nHiUiakxNdMzf9Kt05A1oWJTas9oZQ5Oa2gYF5bx5AK' # 個人權杖值
+    token = 'TZuyoNARaeVyfDvqw7S2lnAMyCXnr0exB0wsxPhYx5M'  #群組權杖值
     headers = {
         "Authorization": "Bearer " + token, 
         "Content-Type" : "application/x-www-form-urlencoded"
@@ -39,11 +39,11 @@ if __name__ == '__main__':
     # 1  2  5  6  7  8 10 11 12
     # 11 12 13 14 15 17 18 19 20 21 22
     #  3  4  5  6  7  9 10 11 12 13 14 
-    sched.add_job(lineNotifyMessage,'cron',hour='3-7,9-14',minute=28)
-    sched.add_job(lineNotifyMessage,'cron',hour='3-7,9-14',minute=29)
+    #sched.add_job(lineNotifyMessage,'cron',hour='3-7,9-14',minute=28)
+    #sched.add_job(lineNotifyMessage,'cron',hour='3-7,9-14',minute=29)
      
-    #sched.add_job(lineNotifyMessage,'cron',hour='1-2,5-8,10-12',minute=58)
-    #sched.add_job(lineNotifyMessage,'cron',hour='1-2,5-8,10-12',minute=59)
+    sched.add_job(lineNotifyMessage,'cron',hour='1-2,4-8,10-12',minute=58)
+    sched.add_job(lineNotifyMessage,'cron',hour='1-2,4-8,10-12',minute=59)
     
     #sched.add_job(scheduled_job,'cron', day_of_week='mon-sun', minute='*/1')
     #sched.add_job(scheduled_job,'cron',hour='9-10,13-16,18-20',minute=58)
