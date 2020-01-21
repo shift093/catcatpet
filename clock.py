@@ -12,8 +12,8 @@ def scheduled_job():
     connect = urllib.request.urlopen(url)
 """
 def lineNotifyMessage():
-    message = '[測試階段]Hello！～記得抓英雄唷！'
-    #message = '[測試階段]Hello！各位～記得抓貓唷！'
+    #message = '[測試階段]Hello！～記得抓英雄唷！'
+    message = '[抓貓大隊]Hello！各位～記得抓貓唷！'
     #message = '[LINE Notify]Hello！各位～記得抓貓唷！' # 要傳送的訊息內容
     #token = 'nHiUiakxNdMzf9Kt05A1oWJTas9oZQ5Oa2gYF5bx5AK' # 個人權杖值
     token = 'TZuyoNARaeVyfDvqw7S2lnAMyCXnr0exB0wsxPhYx5M'  #群組權杖值
