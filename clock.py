@@ -42,8 +42,8 @@ if __name__ == '__main__':
     #sched.add_job(lineNotifyMessage,'cron',hour='3-7,9-14',minute=28)
     #sched.add_job(lineNotifyMessage,'cron',hour='3-7,9-14',minute=29)
      
-    sched.add_job(lineNotifyMessage,'cron',hour='1-2,4-8,10-12',minute=58)
-    sched.add_job(lineNotifyMessage,'cron',hour='1-2,4-8,10-12',minute=59)
+    #sched.add_job(lineNotifyMessage,'cron',hour='1-2,4-8,10-12',minute=58)
+    #sched.add_job(lineNotifyMessage,'cron',hour='1-2,4-8,10-12',minute=59)
     
     #sched.add_job(scheduled_job,'cron', day_of_week='mon-sun', minute='*/1')
     #sched.add_job(scheduled_job,'cron',hour='9-10,13-16,18-20',minute=58)
